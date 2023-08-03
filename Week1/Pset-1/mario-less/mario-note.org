@@ -1,0 +1,71 @@
+#+TITLE: Creating Mario Pyramid with hashes
+
+       #
+      ##
+     ###
+    ####
+   #####
+  ######
+ #######
+########
+
+* Pseudocode
+** Including the header files/library files
+** Begin the main function
+** creating a variable that will take input from the user to find out how big the pyramid should be
+** Prompt for the user's input
+*** First we're going to create a while loop and set it to true (use do-while loop)
+#+begin_src c
+  while (true)
+#+end_src
+*** Second we're going to tell the compute using a conditional that if the value of n is greater than 0 and less than 9 we should break the loop, if not keep prompting the user for an input
+#+begin_src c
+  {
+    if (n > 0 && n < 9)
+      {
+        break;
+      }
+    else
+      {
+        printf("Enter an integer value: ");
+        scanf("%i", &n);
+      }
+  }
+#+end_src
+
+** Printing out the Pyramid
+*** Required
+**** for-loops
+***** In order to change to new line we have the outer-most loop
+#+begin_src c
+  for (int i = 1; i <= n; i++)
+    {
+      printf("\n");  
+    }
+#+end_src
+***** In order to print out the spaces we are going to nest a loop inside our first one
+#+begin_src c
+  for (int i = 1; i <= n; i++)
+    {
+      for (int j = 1; j <= n - i; j++)
+        {
+          printf(" ");
+        }
+      printf("\n");
+    }
+#+end_src
+***** Then to print out the blocks/hashes (#) we write another nested loop
+#+begin_src c
+  for (int i = 1; i <= n; i++)
+    {
+      for (int j = 1; j <= n - i; j++)
+        {
+          printf(" ");
+        }
+      for (int k = 1; k <= i; k++)
+        {
+          printf("#");
+        }
+      printf("\n");
+    }
+#+end_src

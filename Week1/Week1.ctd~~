@@ -1,0 +1,1092 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <bookmarks list="27"/>
+  <node name="CS50" unique_id="1" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1688216167" ts_lastsave="1688216314">
+    <rich_text>
+</rich_text>
+    <rich_text link="webs https://cs50.harvard.edu/x/2023/notes/1/#welcome" scale="h2">Welcome!</rich_text>
+    <rich_text>
+
+• In our previous session, we learned about Scratch, a visual programming language.
+
+• Indeed, all the essential programming concepts presented in Scratch will be utilized as you learn how to program any programming language.
+
+• Recall that machines only understand binary. Where humans write </rich_text>
+    <rich_text style="italic">source code</rich_text>
+    <rich_text>, a list of instructions for the computer that is human readable, machines only understand what we can now call </rich_text>
+    <rich_text style="italic">machine code</rich_text>
+    <rich_text>. This machine code is a pattern of ones and zeros that produces a desired effect.
+
+• It turns out that we can convert </rich_text>
+    <rich_text style="italic">source code</rich_text>
+    <rich_text> into </rich_text>
+    <rich_text family="monospace">machine code</rich_text>
+    <rich_text> using a very special piece of software called a </rich_text>
+    <rich_text style="italic">compiler</rich_text>
+    <rich_text>. Today, we will be introducing you to a compiler that will allow you to convert source code in the programming language </rich_text>
+    <rich_text style="italic">C</rich_text>
+    <rich_text> into machine code.
+
+• Today, in addition to learning about how to code, you will be learning about how to write good code.
+
+• Code can be evaluated upon three axes. First, </rich_text>
+    <rich_text style="italic">correctness</rich_text>
+    <rich_text> refers to “does the code run as intended?” Second, </rich_text>
+    <rich_text style="italic">design</rich_text>
+    <rich_text> refers to “how well is the code designed?” Finally, </rich_text>
+    <rich_text style="italic">style</rich_text>
+    <rich_text> refers to “how aesthetically pleasing and consistent is the code?”
+</rich_text>
+    <node name="Week1" unique_id="2" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1688216177" ts_lastsave="1688581523">
+      <rich_text>In these Notes we mainly focus on </rich_text>
+      <rich_text style="italic" weight="heavy">C programming language</rich_text>
+      <rich_text>...</rich_text>
+      <node name="Terminologies" unique_id="3" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1688216635" ts_lastsave="1688237726">
+        <rich_text scale="h1">Terminologies</rich_text>
+        <rich_text>
+
+The following are some of the programming terminologies;
+
+</rich_text>
+        <rich_text scale="h3">Source Code</rich_text>
+        <rich_text>:
+The code that you human write into the computer is called source code.
+
+</rich_text>
+        <rich_text scale="h3">Machine Code</rich_text>
+        <rich_text>:
+The code that is understandable by the computer is called machine code.
+
+</rich_text>
+        <rich_text scale="h3">Compiler:</rich_text>
+        <rich_text>
+A compiler is a special program that converts source code to machine code.
+		
+		Source Code → Compiler → Machine Code
+
+</rich_text>
+      </node>
+      <node name="Good Code" unique_id="4" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1688216997" ts_lastsave="1688376809">
+        <rich_text scale="h1">Good Code</rich_text>
+        <rich_text>
+
+</rich_text>
+        <rich_text scale="h3">Correctness:</rich_text>
+        <rich_text>
+To check whether the code is correct or not, to find out whether there are any mistakes or not.
+	→ Does the code do what it is suppose to do...
+
+</rich_text>
+        <rich_text scale="h3">Design:</rich_text>
+        <rich_text>
+To check whethe the code is well designed or not. The following are some of the merits of well-designed code;
+
+• well designed code is often faster when it's going to run
+• it will be more maintainable by you and your colleagues
+
+It helps you in communicating your ideas.
+
+</rich_text>
+        <rich_text scale="h3">Style:</rich_text>
+        <rich_text>
+It's just the aesthetics of your code. It helps in understanding the code or helps is the understanding of your code by someone else.</rich_text>
+      </node>
+      <node name="Functions" unique_id="12" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1688376809" ts_lastsave="1688376875">
+        <rich_text scale="h1">Functions</rich_text>
+        <rich_text>
+
+In Scratch, we utilized the </rich_text>
+        <rich_text family="monospace">say</rich_text>
+        <rich_text> block to display any text on the screen. Indeed, in C, we have a function called </rich_text>
+        <rich_text family="monospace">printf</rich_text>
+        <rich_text> that does exactly this.
+
+→ </rich_text>
+        <rich_text weight="heavy">Note</rich_text>
+        <rich_text>: </rich_text>
+        <rich_text justification="left" scale="h3">A common error in C programming is the omission of a semicolon.</rich_text>
+        <rich_text>
+</rich_text>
+      </node>
+      <node name="Hello World in C" unique_id="6" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1688217999" ts_lastsave="1688237721">
+        <rich_text scale="h1">Program</rich_text>
+        <rich_text>
+
+</rich_text>
+        <rich_text justification="left"></rich_text>
+        <rich_text>
+
+In order to display 'hello world' on the screen we need to use the </rich_text>
+        <rich_text style="italic">printf</rich_text>
+        <rich_text> function inside </rich_text>
+        <rich_text style="italic">C</rich_text>
+        <rich_text>, then the openning and closing brackets </rich_text>
+        <rich_text style="italic">()</rich_text>
+        <rich_text>, then in between comes the text ‘hello, world’. One thing to note, when ever you want a string output (alphabetic output) on the display, we write it in between double quotes. We also used /</rich_text>
+        <rich_text style="italic">n</rich_text>
+        <rich_text> within the double quotes. Then end the line with a semicolon (its just the syntax).
+
+</rich_text>
+        <rich_text scale="h3">Statement:</rich_text>
+        <rich_text>
+A </rich_text>
+        <rich_text style="italic">statement</rich_text>
+        <rich_text> is a line of code that ends with a semicolon.
+
+</rich_text>
+        <rich_text scale="h3">Escape Sequence:</rich_text>
+        <rich_text>
+
+Escape sequences are special symbols that a programming language in this case </rich_text>
+        <rich_text style="italic">C</rich_text>
+        <rich_text> understands. These special sequences tells the compiler to do certain actions. Like e.g. \n is a escape sequence that moves the in cursor to the new line.
+
+</rich_text>
+        <rich_text scale="h3">What does the #include &lt;stdio.h&gt; line do???</rich_text>
+        <rich_text>
+
+The #</rich_text>
+        <rich_text style="italic">include</rich_text>
+        <rich_text> means to include a file, the </rich_text>
+        <rich_text style="italic">stdio.h</rich_text>
+        <rich_text> is means </rich_text>
+        <rich_text weight="heavy">Standard Input and Output</rich_text>
+        <rich_text>. It simply means that it brings in the functionality for input and output inside the </rich_text>
+        <rich_text style="italic">C</rich_text>
+        <rich_text> programming language.
+
+</rich_text>
+        <codebox char_offset="9" justification="left" frame_width="500" frame_height="100" width_in_pixels="1" syntax_highlighting="c" highlight_brackets="1" show_line_numbers="0">#include &lt;stdio.h&gt;
+
+int main(void)
+{
+	printf("hello, world\n");
+}</codebox>
+      </node>
+      <node name="Difference b/w Side Effect and Return Value" unique_id="7" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1688235246" ts_lastsave="1688235331">
+        <rich_text scale="h1">Difference between Side Effect and Return Value:</rich_text>
+        <rich_text>
+
+A </rich_text>
+        <rich_text weight="heavy">side</rich_text>
+        <rich_text> </rich_text>
+        <rich_text weight="heavy">effect</rich_text>
+        <rich_text> is something </rich_text>
+        <rich_text weight="heavy">visual</rich_text>
+        <rich_text> that happens on the screen, while a </rich_text>
+        <rich_text weight="heavy">return</rich_text>
+        <rich_text> value is a value that you actually get by a return function, that you can use and reuse.
+
+</rich_text>
+      </node>
+      <node name="Ask for Name in C" unique_id="8" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1688235643" ts_lastsave="1688308303">
+        <rich_text scale="h1">Program</rich_text>
+        <rich_text>
+
+In this program we're going to write a code to ask the user for his/her name...
+
+</rich_text>
+        <rich_text justification="left"></rich_text>
+        <rich_text>
+
+So %s is known as a </rich_text>
+        <rich_text weight="heavy">format code</rich_text>
+        <rich_text> in </rich_text>
+        <rich_text style="italic">C</rich_text>
+        <rich_text>, specifically for printf. And it just means, </rich_text>
+        <rich_text style="italic">this is a placeholder for a string</rich_text>
+        <rich_text>. Again, a string is just text. So this means, </rich_text>
+        <rich_text style="italic">hey, computer, print out literally, hello, comma, space, and then not literally %s</rich_text>
+        <rich_text>. </rich_text>
+        <rich_text weight="heavy">%s</rich_text>
+        <rich_text> is treated specially to mean plug in some value here.
+
+→ </rich_text>
+        <rich_text style="italic" weight="heavy">%s:</rich_text>
+        <rich_text> place holder that will eventually be replaced by a variable that holds a string value
+→ </rich_text>
+        <rich_text style="italic" weight="heavy">%c:</rich_text>
+        <rich_text> place holder that will eventually be replaced by a variable that holds a character value</rich_text>
+        <codebox char_offset="90" justification="left" frame_width="500" frame_height="100" width_in_pixels="1" syntax_highlighting="c" highlight_brackets="1" show_line_numbers="0">#include &lt;stdio.h&gt;
+#include &lt;cs50.h&gt;
+
+int main()
+{
+	char answer[50];
+	printf("Enter your name: ");
+	scanf("%s", &amp;answer);
+	printf("hello, %s\n", answer);
+}</codebox>
+      </node>
+      <node name="Conditionals in C" unique_id="9" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1688237597" ts_lastsave="1688317679">
+        <rich_text scale="h1">Conditionals in C</rich_text>
+        <rich_text>
+
+Syntax of a Conditional (i.e. if statement)
+</rich_text>
+        <rich_text justification="left"></rich_text>
+        <rich_text>
+
+→ double equal sign '==' means equality in </rich_text>
+        <rich_text style="italic">C</rich_text>
+        <rich_text>
+→ single equal sign ‘=’ means assignment in </rich_text>
+        <rich_text style="italic">C</rich_text>
+        <rich_text>
+
+The program:
+</rich_text>
+        <rich_text justification="left"></rich_text>
+        <rich_text>
+
+→ Here in the program above it first imports the required libraries &lt;stdio.h&gt; and &lt;cs50.h&gt;
+→ then the int main
+→ then we take input values from the user with get_int function provided by &lt;cs50.h&gt; library
+→ and then after that we put in the algorithm</rich_text>
+        <codebox char_offset="63" justification="left" frame_width="500" frame_height="100" width_in_pixels="1" syntax_highlighting="c" highlight_brackets="1" show_line_numbers="0">if (x &lt; y)
+{
+	//if condition true do something
+}
+else if (x &gt; y)
+{
+	//if the above condition is false do something
+}
+else
+{
+	//if the above conditions are false do something
+}</codebox>
+        <codebox char_offset="171" justification="left" frame_width="500" frame_height="100" width_in_pixels="1" syntax_highlighting="c" highlight_brackets="1" show_line_numbers="0">#include &lt;cs50.h&gt;
+#include &lt;stdio.h&gt;
+
+int main()
+{
+	int x = get_int("Enter the first value: ");
+	int y = get_int("Enter the second value: ");
+	
+	if (x &lt; y)
+	{
+		printf("x is less than y");
+	}
+	else if (x &gt; y)
+	{
+		printf("x is greater than y");
+	}
+	else
+	{
+		printf("x is equal to y");
+	}
+}</codebox>
+      </node>
+      <node name="Agree or Disagree program in C" unique_id="10" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1688317679" ts_lastsave="1688376959">
+        <rich_text scale="h1">Agree or Disagree</rich_text>
+        <rich_text>
+
+In this program, we found out through the user's input that whether he agree or not with a simple (y or n) yes or no input...
+
+</rich_text>
+        <rich_text justification="left"></rich_text>
+        <rich_text>
+
+→ Note:
+   ⇒ Double quotes are for strings
+   ⇒ Single quotes are for characters (char)
+
+For Capital Y and N:
+</rich_text>
+        <rich_text justification="left"></rich_text>
+        <rich_text>
+
+The code above works but it's not what we call good design...
+
+We'll do it the other way:
+
+</rich_text>
+        <rich_text justification="left"></rich_text>
+        <rich_text>
+
+Here we used a logical operator </rich_text>
+        <rich_text style="italic">or</rich_text>
+        <rich_text>:
+→ It if either one of the two or many conditions is true, it will look at it as if the condition is met and is true do something that is within the conditional
+→ But if all of the conditions are falls then it will not execute the statements within the conditional
+</rich_text>
+        <codebox char_offset="146" justification="left" frame_width="500" frame_height="100" width_in_pixels="1" syntax_highlighting="c" highlight_brackets="1" show_line_numbers="0">#include &lt;stdio.h&gt;
+#include &lt;cs50.h&gt;
+
+int main()
+{
+	char c = get_char("Do you agree or not: ");
+	if (c == 'y')
+	{
+		printf("Agreed.\n");
+	}
+	else if (c == 'n')
+	{
+		printf("Not Agreed.\n");
+	}
+}</codebox>
+        <codebox char_offset="259" justification="left" frame_width="500" frame_height="100" width_in_pixels="1" syntax_highlighting="c" highlight_brackets="1" show_line_numbers="0">#include &lt;stdio.h&gt;
+#include &lt;cs50.h&gt;
+
+int main()
+{
+	char c = get_char("Do you agree or not: ");
+	if (c == 'y')
+	{
+		printf("Agreed.\n");
+	}
+	else if (c == 'Y')
+	{
+		printf("Agreed.\n");
+	}
+	else if (c == 'n')
+	{
+		printf("Not Agreed.\n");
+	}
+	else if (c == 'N')
+	{
+		printf("Not Agreed.\n");
+	}
+	}</codebox>
+        <codebox char_offset="353" justification="left" frame_width="500" frame_height="100" width_in_pixels="1" syntax_highlighting="c" highlight_brackets="1" show_line_numbers="0">#include &lt;stdio.h&gt;
+#include &lt;cs50.h&gt;
+
+int main()
+{
+	char c = get_char("Do you agree or not: ");
+	if (c == 'y' || c == 'Y')
+	{
+		printf("Agreed.\n");
+	}
+	else if (c == 'n' || c == 'N')
+	{
+		printf("Not Agreed.\n");
+	}
+}</codebox>
+      </node>
+      <node name="Variables" unique_id="13" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1688376959" ts_lastsave="1688377152">
+        <rich_text scale="h1">Variables</rich_text>
+        <rich_text>
+
+A variable is a name that can store a value. That name can be x, y or z and can hold all sorts of values. Let's say that we want to assign an initial value to a variable called ‘counter’, we'll do it like this:
+</rich_text>
+        <rich_text justification="left"></rich_text>
+        <rich_text>
+
+
+</rich_text>
+        <codebox char_offset="222" justification="left" frame_width="500" frame_height="100" width_in_pixels="1" syntax_highlighting="c" highlight_brackets="1" show_line_numbers="0">// first comes the variable type in this example its int
+// then the name of the variable in this example its counter
+// then the assignment symbol (=)
+// and then comes the integer value and the statements ends with a semicolon
+
+int counter = 0;</codebox>
+      </node>
+      <node name="Loops" unique_id="11" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1688318771" ts_lastsave="1688448561">
+        <rich_text scale="h1">Meow Program</rich_text>
+        <rich_text>
+
+Simple program that prints meow:
+</rich_text>
+        <rich_text justification="left"></rich_text>
+        <rich_text>
+
+Let's try a loop:
+</rich_text>
+        <rich_text justification="left"></rich_text>
+        <rich_text>
+
+The right or cononical way:
+</rich_text>
+        <rich_text justification="left"></rich_text>
+        <rich_text>
+
+The type of loop that we used in the programs above is called a </rich_text>
+        <rich_text style="italic">while</rich_text>
+        <rich_text> loop.
+
+Now we'll be talking about </rich_text>
+        <rich_text style="italic">for</rich_text>
+        <rich_text> loops.
+
+Let's see an example of for loop:
+</rich_text>
+        <rich_text justification="left"></rich_text>
+        <rich_text>
+
+In order to create an </rich_text>
+        <rich_text style="italic">infinite</rich_text>
+        <rich_text> loop or </rich_text>
+        <rich_text style="italic">forever</rich_text>
+        <rich_text> loop that we did in scratch, we do the following;
+</rich_text>
+        <rich_text justification="left"></rich_text>
+        <codebox char_offset="47" justification="left" frame_width="500" frame_height="100" width_in_pixels="1" syntax_highlighting="c" highlight_brackets="1" show_line_numbers="0">#include &lt;stdio.h&gt;
+
+int main(void)
+
+{
+printf("meow\n");
+printf("meow\n");
+printf("meow\n");
+}</codebox>
+        <codebox char_offset="68" justification="left" frame_width="500" frame_height="100" width_in_pixels="1" syntax_highlighting="c" highlight_brackets="1" show_line_numbers="0">#include &lt;stdio.h&gt;
+
+int main()
+{
+	int counter = 0;
+	while (counter &gt; 0)
+	{
+		printf("Meow\n");
+		counter--;
+	}
+}</codebox>
+        <codebox char_offset="99" justification="left" frame_width="500" frame_height="100" width_in_pixels="1" syntax_highlighting="c" highlight_brackets="1" show_line_numbers="0">#include &lt;stdio.h&gt;
+
+int main()
+{
+	int i = 0;
+	while (i &lt; 3)
+	{
+		printf("meow\n");
+		i++;
+	}
+}</codebox>
+        <codebox char_offset="252" justification="left" frame_width="500" frame_height="100" width_in_pixels="1" syntax_highlighting="c" highlight_brackets="1" show_line_numbers="0">#include &lt;stdio.h&gt;
+
+int main()
+{
+	for (int i = 0; i &lt; 3; i++)
+	{
+		printf("meow\n");
+	}</codebox>
+        <codebox char_offset="352" justification="left" frame_width="500" frame_height="100" width_in_pixels="1" syntax_highlighting="c" highlight_brackets="1" show_line_numbers="0">#include &lt;stdbool.h&gt;
+#include &lt;stdio.h&gt;
+
+int main()
+{
+	while (true)
+	{
+		printf("meow\n")
+	}
+}</codebox>
+      </node>
+      <node name="Linux" unique_id="14" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1688448561" ts_lastsave="1688458461">
+        <rich_text scale="h1">CLI</rich_text>
+        <rich_text>
+
+CLI command that you need to know:
+
+→ ls → listing the files and subfolders in a directory
+→ mv → To move a file or folder
+→ cd → to change directory
+→ cp → to copy a file or subfolder
+→ mkdir → to make a new directory
+→ rm → to remove a file
+→ rmdir → to remove a directory</rich_text>
+      </node>
+      <node name="Super Mario Brothers (C)" unique_id="15" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1688458461" ts_lastsave="1688465939">
+        <rich_text>
+Let's say that you wanna print out four question marks as in a </rich_text>
+        <rich_text style="italic">Super Mario Brothers </rich_text>
+        <rich_text>game, you simply need to do the following;
+</rich_text>
+        <rich_text justification="left"></rich_text>
+        <rich_text>
+
+Now that you wanna create a road block in the way, you do the following;
+</rich_text>
+        <rich_text justification="left"></rich_text>
+        <rich_text>
+
+but if you want a 2 dimensional block; you do the folowing;
+</rich_text>
+        <rich_text justification="left"></rich_text>
+        <rich_text>
+
+If ever in the future, you needed to change the amount of blocks that you need to print out, at that moment you're gonna have to change the value from ‘3’ to anyother value multiple times. So it's better that you simply create a variable that holds that value for you. If in the future you wanna change that value all you need to do is to change the value of the variable.
+</rich_text>
+        <rich_text justification="left"></rich_text>
+        <rich_text>
+
+In order to be extra careful, just so you don't accidentally change the value of n any where else in the code, add </rich_text>
+        <rich_text style="italic">const</rich_text>
+        <rich_text> at the beginning of the declaration or initialization of you variable </rich_text>
+        <rich_text style="italic">n</rich_text>
+        <rich_text>...
+</rich_text>
+        <rich_text justification="left"></rich_text>
+        <rich_text>
+
+Let's say that we want a user input to create that block...
+</rich_text>
+        <rich_text justification="left"></rich_text>
+        <rich_text>
+
+</rich_text>
+        <rich_text style="italic">do-while</rich_text>
+        <rich_text>, in general, is super useful when you want to get input from the user and make sure it meets certain requirements.
+</rich_text>
+        <codebox char_offset="128" justification="left" frame_width="500" frame_height="100" width_in_pixels="1" syntax_highlighting="c" highlight_brackets="1" show_line_numbers="0">#include &lt;stdio.h&gt;
+
+int main(void)
+{
+	for (int i = 0; i &lt; 4; i++)
+	{
+		printf("?");
+	}
+	printf("\n");
+}</codebox>
+        <codebox char_offset="204" justification="left" frame_width="500" frame_height="100" width_in_pixels="1" syntax_highlighting="c" highlight_brackets="1" show_line_numbers="0">#include &lt;stdio.h&gt;
+
+int main(void)
+{
+	for (int i = 0; i &lt; 3; i++)
+	{
+		printf("#\n");
+	}
+}</codebox>
+        <codebox char_offset="267" justification="left" frame_width="500" frame_height="100" width_in_pixels="1" syntax_highlighting="c" highlight_brackets="1" show_line_numbers="0">#include &lt;stdio.h&gt;
+
+int main(void)
+{
+	for (int i = 0; i &lt; 3; i++)
+	{
+		for  (int j = 0; j &lt; 3; j++)
+		{
+			printf("#");
+		}
+		printf("\n");
+	}
+}</codebox>
+        <codebox char_offset="643" justification="left" frame_width="500" frame_height="100" width_in_pixels="1" syntax_highlighting="c" highlight_brackets="1" show_line_numbers="0">#include &lt;stdio.h&gt;
+
+int main(void)
+{
+	int n = 3
+	for (int i = 0; i &lt; n; i++)
+	{
+		for  (int j = 0; j &lt; n; j++)
+		{
+			printf("#");
+		}
+		printf("\n");
+	}
+}</codebox>
+        <codebox char_offset="842" justification="left" frame_width="500" frame_height="100" width_in_pixels="1" syntax_highlighting="c" highlight_brackets="1" show_line_numbers="0">#include &lt;stdio.h&gt;
+
+int main(void)
+{
+	const int n = 3
+	for (int i = 0; i &lt; n; i++)
+	{
+		for  (int j = 0; j &lt; n; j++)
+		{
+			printf("#");
+		}
+		printf("\n");
+	}
+}</codebox>
+        <codebox char_offset="905" justification="left" frame_width="500" frame_height="100" width_in_pixels="1" syntax_highlighting="c" highlight_brackets="1" show_line_numbers="0">#include &lt;stdio.h&gt;
+
+int main(void)
+{
+	int n;
+	do
+	{
+		printf("Size: ");
+		scanf("%d", &amp;n);
+	}
+	while (n &lt; 1);
+	
+	for (int i = 0; i &lt; n; i++)
+	{
+		for  (int j = 0; j &lt; n; j++)
+		{
+			printf("#");
+		}
+		printf("\n");
+	}
+}</codebox>
+      </node>
+      <node name="Comments in C" unique_id="16" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1688465939" ts_lastsave="1688466525">
+        <rich_text scale="h1">Comments</rich_text>
+        <rich_text>
+
+It's just an explanatory remark in any terse English that generally explains the next six or so lines, the next chunk or block of code, if you will.
+
+</rich_text>
+        <rich_text justification="left"></rich_text>
+        <rich_text>
+
+Comments in </rich_text>
+        <rich_text style="italic">C</rich_text>
+        <rich_text> programming language starts with double forward slashes (//), hence declaring that whatever is written after these double slashes is a comment.
+
+→ A comment is just a note to yourself as a programmer.
+
+Comments can be an approximation of what we call pseudocode.
+
+Pseudocode is terse english that gets your point accross.
+
+</rich_text>
+        <codebox char_offset="160" justification="left" frame_width="500" frame_height="100" width_in_pixels="1" syntax_highlighting="c" highlight_brackets="1" show_line_numbers="0">#include &lt;stdio.h&gt;
+
+int main(void)
+{
+	// Get size of grid
+	int n;
+	do
+	{
+		printf("Size: ");
+		scanf("%d", &amp;n);
+	}
+	while (n &lt; 1);
+	
+	// prints a grid of bricks
+	for (int i = 0; i &lt; n; i++)
+	{
+		for  (int j = 0; j &lt; n; j++)
+		{
+			printf("#");
+		}
+		printf("\n");
+	}
+}</codebox>
+      </node>
+      <node name="Creating your own Functions in C" unique_id="17" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1688466525" ts_lastsave="1688468024">
+        <rich_text scale="h1">Creating your own Functions in C</rich_text>
+        <rich_text>
+
+The first thing to do while creating functions in </rich_text>
+        <rich_text style="italic">C</rich_text>
+        <rich_text> is declaration of the function;
+
+</rich_text>
+        <rich_text justification="left"></rich_text>
+        <rich_text>
+
+then the second thing to do is the calling of the function;
+
+</rich_text>
+        <rich_text justification="left"></rich_text>
+        <rich_text>
+
+and then the definition of the function;
+
+</rich_text>
+        <rich_text justification="left"></rich_text>
+        <rich_text>
+</rich_text>
+        <codebox char_offset="119" justification="left" frame_width="500" frame_height="100" width_in_pixels="1" syntax_highlighting="c" highlight_brackets="1" show_line_numbers="0">// At the top of the file after the include files we simply declare the functions
+
+#include &lt;stdio.h&gt;
+
+// In order to declare a function, at the begining we have the type, then the name, and then between perenthesis any value
+// that we want to pass in to the function is added
+int size_grid(void);
+int print_grid(int size);</codebox>
+        <codebox char_offset="183" justification="left" frame_width="500" frame_height="100" width_in_pixels="1" syntax_highlighting="c" highlight_brackets="1" show_line_numbers="0">// we simply callout the name of the function within the main function...
+
+int main()
+{
+	// we can store the function within a variable
+	int n = size_grid();
+	// we can also simply type the function without storing it in any other variable and pass in a value
+	print_grid(n);</codebox>
+        <codebox char_offset="228" justification="left" frame_width="500" frame_height="100" width_in_pixels="1" syntax_highlighting="c" highlight_brackets="1" show_line_numbers="0">// In order to define a function, in the begining we add the type, then the name and then any value that we want to pass
+// within the function and then we type the body of the function
+
+int size_grid(void)
+{
+	int n;
+	do
+	{
+		printf("Size: ");
+		scanf("%d", &amp;n);
+	}
+	while (n &lt; 1);
+}
+
+int print_grid(int size)
+{
+	for (int i = 0; i &lt; size; i++)
+	{
+		for (int j = 0; j &lt; size; j++)
+		{
+			printf("#");
+		}
+		printf("\n");
+	}
+}</codebox>
+      </node>
+      <node name="Operators" unique_id="18" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1688468024" ts_lastsave="1688478837">
+        <rich_text scale="h1">Operators</rich_text>
+        <rich_text>
+
+In operators we have;
+
+→ + : for addtion
+→ - : for subtraction
+→ * : for multiplication
+→ / : for division
+→ % : for finding out the remainder</rich_text>
+        <node name="Creating a calculator in C" unique_id="19" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1688468106" ts_lastsave="1688478798">
+          <rich_text scale="h1">Simple Calculator using C Programming Language</rich_text>
+          <rich_text>
+
+If you just wanna make a simple calculator that takes two input and then add the two values and gives you the output. Do the following;
+</rich_text>
+          <rich_text justification="left"></rich_text>
+          <rich_text>
+
+If you add 2000000000 with 2000000000, we'll get the -294967296 value. Why is that?
+
+The reason this is the situation is because the RAM (Random Access Memory) inside our computer is finite, no matter how high we're going to be counting, the RAM in our computer is going to be finite. </rich_text>
+          <rich_text justification="left" scale="h3" foreground="#62ffff">We don't have an infinite number of zeros and ones</rich_text>
+          <rich_text>.
+
+Well, it turns out that computers typically use as many as 32 bits in zeros or ones to represent something like an integer, or in C, an int. So for instance, the smallest number we could represent using 32 ints, of course, using 32 bits, of course, would be zero 32 zeros. And the biggest number we could represent is by changing all of those zeros to ones, which, in this case, will ideally give us a number that equals roughly 4 billion in total. It's actually 4,294,967,295 maximally if you set all 32 of those bits to ones and then do out the actual math.
+
+So we also need to be using this amount of space for negative numbers so in order to do that we'll have to split 4,294,967,295 in half, just so we could use half for positve numbers and half for negative numbers.
+</rich_text>
+          <codebox char_offset="184" justification="left" frame_width="500" frame_height="100" width_in_pixels="1" syntax_highlighting="c" highlight_brackets="1" show_line_numbers="0">#include &lt;stdio.h&gt;
+
+int main(void)
+{
+	int x, y;
+	printf("x: ");
+	scanf("%i", x);
+	printf("y: ");
+	scanf("%i", y);
+	
+	printf("%i", x + y);
+	printf("\n");
+}</codebox>
+        </node>
+      </node>
+      <node name="Integer Overflow" unique_id="20" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1688478837" ts_lastsave="1688479386">
+        <rich_text scale="h1">Integer Overflow</rich_text>
+        <rich_text>
+
+If for example we're using three bits to represent values the following might happen;
+
+→ 000 = 0
+→ 001 = 1
+→ 010 = 2
+→ 011 = 3
+→ 100 = 4
+→ 101 = 5
+→ 110 = 6
+→ 111 = 7
+
+But if we want to represent a value that is greater than 7, let's say for this example </rich_text>
+        <rich_text style="italic">8</rich_text>
+        <rich_text>, we know that only the fourth bit will be 1 and the rest will be zero. But the problem is that we only have 3 bits. So what might happen is that since there is no fourth bit the value represented here will be
+
+→ 000 = 0
+
+Why? Because since the fourth bit doesn't exist and you need an output, the 3 bits are converted to 0 and you get the output 0 or some sort of negative value.
+
+This is what we call Integer Overflow. When the required value is greater than the bits present to represent that required value.</rich_text>
+      </node>
+      <node name="Long Integers" unique_id="21" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1688479386" ts_lastsave="1688479586">
+        <rich_text scale="h1">Long Integers</rich_text>
+        <rich_text>
+
+Long integers are integers that can represent a huge amount of value. Integers require 32 bits to represent a value while long integers require 64 bits to represent a value in </rich_text>
+        <rich_text style="italic">C</rich_text>
+        <rich_text>.
+
+The values that we're able to represent using long integers is 9 quintillion. Which is a huge amount but still is limited.
+
+</rich_text>
+      </node>
+      <node name="Truncation" unique_id="22" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1688479586" ts_lastsave="1688480523">
+        <rich_text scale="h1">Truncation</rich_text>
+        <rich_text>
+
+Computers also suffer from potentially what's called truncation, where especially when you're doing math involving floating-point values that is numbers with decimals you might accidentally unknowingly truncate the value-- that is lose everything after the decimal point.
+
+</rich_text>
+        <rich_text justification="left"></rich_text>
+        <rich_text>
+
+Let's say that we give 1 for x and 3 for y, we expect that the output would be 0.3333-, but we get 0, to solve this we'll use float output;
+
+</rich_text>
+        <rich_text justification="left"></rich_text>
+        <rich_text>
+
+But with that we get 0.000000. This is what we call truncation.
+
+So how to solve it...
+
+For that we use Type Casting...</rich_text>
+        <codebox char_offset="285" justification="left" frame_width="500" frame_height="100" width_in_pixels="1" syntax_highlighting="c" highlight_brackets="1" show_line_numbers="0">#include &lt;stdio.h&gt;
+
+int main(void)
+{
+	long x, y;
+	printf("x: ");
+	scanf("%li", x);
+	printf("y: ");
+	scanf("%li", y);
+	
+	printf("%li", x + y);
+	printf("\n");
+}</codebox>
+        <codebox char_offset="429" justification="left" frame_width="500" frame_height="100" width_in_pixels="1" syntax_highlighting="c" highlight_brackets="1" show_line_numbers="0">#include &lt;stdio.h&gt;
+
+int main(void)
+{
+	long x, y;
+	printf("x: ");
+	scanf("%li", x);
+	printf("y: ");
+	scanf("%li", y);
+	float z = x / y;
+	printf("%f\n", z);
+}</codebox>
+      </node>
+      <node name="Type Casting" unique_id="23" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1688480291" ts_lastsave="1688480654">
+        <rich_text scale="h1">Type Casting</rich_text>
+        <rich_text>
+
+Type Casting the a method that is to convert one data type to another by explicitly telling the compiler that you want to do so.
+
+</rich_text>
+        <rich_text justification="left"></rich_text>
+        <rich_text>
+
+So in order to improve the code above we use type casting to get the result that we want...
+
+</rich_text>
+        <rich_text justification="left"></rich_text>
+        <rich_text>
+
+Now, we're going to get the output 0.333333</rich_text>
+        <codebox char_offset="144" justification="left" frame_width="500" frame_height="100" width_in_pixels="1" syntax_highlighting="c" highlight_brackets="1" show_line_numbers="0">#include &lt;stdio.h&gt;
+
+int main(void)
+{
+	long x, y;
+	printf("x: ");
+	scanf("%li", x);
+	printf("y: ");
+	scanf("%li", y);
+	float z = x / y;
+	printf("%f\n", z);
+}</codebox>
+        <codebox char_offset="240" justification="left" frame_width="500" frame_height="100" width_in_pixels="1" syntax_highlighting="c" highlight_brackets="1" show_line_numbers="0">#include &lt;stdio.h&gt;
+
+int main(void)
+{
+	long x, y;
+	printf("x: ");
+	scanf("%li", x);
+	printf("y: ");
+	scanf("%li", y);
+	
+	float z = (float) x / (float) y;
+	printf("%f\n", z);
+}</codebox>
+      </node>
+      <node name="Floating-Point Imprecision" unique_id="24" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1688480654" ts_lastsave="1690982174">
+        <rich_text scale="h1">Floating-Point Imprecision</rich_text>
+        <rich_text>
+
+Just as we can't represent as big of an integer as we want using int or long alone because there is going to be an upper bound, there's similarly going to be a bound on just how precise our numbers can be.
+
+
+</rich_text>
+        <rich_text justification="left"></rich_text>
+        <rich_text>
+
+we get an unusual value. You would think that the output should be 3 20 times but we get this wierd approximation, this problem that we face is called </rich_text>
+        <rich_text weight="heavy">Floating-Point Imprecision</rich_text>
+        <rich_text>.
+
+If you only have a finite number of bits and, in turn, a finite amount of memory, the computer can really only be so precise intuitively.
+
+So in order to solve this problem we use </rich_text>
+        <rich_text style="italic">double</rich_text>
+        <codebox char_offset="236" justification="left" frame_width="500" frame_height="100" width_in_pixels="1" syntax_highlighting="c" highlight_brackets="1" show_line_numbers="0">#include &lt;stdio.h&gt;
+
+int main(void)
+{
+	long x, y;
+	printf("x: ");
+	scanf("%li", x);
+	printf("y: ");
+	scanf("%li", y);
+	
+	float z = (float) x / (float) y;
+	printf("%.20f\n", z);
+}</codebox>
+      </node>
+      <node name="Double" unique_id="25" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1688480969" ts_lastsave="1690982191">
+        <rich_text scale="h1">Double</rich_text>
+        <rich_text>
+
+Like </rich_text>
+        <rich_text style="italic">long</rich_text>
+        <rich_text> for </rich_text>
+        <rich_text style="italic">int</rich_text>
+        <rich_text>, just like that </rich_text>
+        <rich_text style="italic">double</rich_text>
+        <rich_text> is for </rich_text>
+        <rich_text style="italic">float</rich_text>
+        <rich_text>. It uses twice amount of bits, float uses 32 bits and double uses 64 bits to represent floating values.</rich_text>
+      </node>
+      <node name="Data Types and Variables" unique_id="27" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1690982191" ts_lastsave="1691058645">
+        <rich_text scale="h1" weight="heavy">Data Types and Variables</rich_text>
+        <rich_text>
+
+</rich_text>
+        <rich_text style="italic" scale="h4" weight="heavy">⇒ Integer (int) Data Type</rich_text>
+        <rich_text>
+	The int data-type is used in order to store integer values.
+	
+	Integers always take upto 4 bytes of memory (32 bits). Which means the range of values that they can store is necessarily limited to 32 bits worth of information.
+	
+	The range for positive -&gt; Positive 2 billion
+	The range for negative -&gt; Negative 2 billion
+	
+</rich_text>
+        <rich_text style="italic" scale="h4" weight="heavy">⇒ Unsigned Integer (unsigned int) Data Type</rich_text>
+        <rich_text>
+	Unsigned is a qualifier that can be applied to certain data types (including ints), which effectively doubles the positive range of variables of that type, at the cost of no longer being able to use negative values.
+	
+
+⇒ Note: Just so you know, that unsigned is not the only qualifier in the C programming language, there are others like long, short and const...
+
+</rich_text>
+        <rich_text style="italic" scale="h4" weight="heavy">⇒ Character (char) Data Type</rich_text>
+        <rich_text>
+	The char data type is used with the variables that will store a single character.
+	
+	A character takes up to about 1 byte of memory (8 bits). This means the range of values they can store necessarily limited to only 8 bits worth of information.
+	
+	Thanks to ASCII, we have developed a mapping system for the characters like A, B, C, etc ...to numeric values in the positive side of this range.
+
+</rich_text>
+        <rich_text style="italic" scale="h4" weight="heavy">⇒ Floating Point (float) Data Type</rich_text>
+        <rich_text>
+	The floating data type is used for the variables that store a floating-point values, also known as real numbers.
+	
+	Floating point variables take up to 4 bytes of memory (32 bits).
+	
+	It's a little complicated to precisely describe the range of a float, but suffice it to say with 32 bit of precision, some of it might be used for integer part, we are limited to how precise we can be.
+	
+	If the decimal part of a float value get longer and longer, and it has a large/long integer part as well, then it cannot be very precise. Floats has a precision problem.
+
+</rich_text>
+        <rich_text style="italic" scale="h4" weight="heavy">⇒ Double (double) Data Type</rich_text>
+        <rich_text>
+	The double data type is used for variables that will store floating point values, also known as real numbers.
+	
+	The difference is that double are </rich_text>
+        <rich_text style="italic">double</rich_text>
+        <rich_text> </rich_text>
+        <rich_text style="italic">precision</rich_text>
+        <rich_text>. They take upto 8 bytes (64 bits).
+	
+	With an additional 32 bits of precision relative to floats, double allows us to be able to specify much more precise real numbers.
+	
+</rich_text>
+        <rich_text style="italic" scale="h4" weight="heavy">⇒ Void (void) Type</rich_text>
+        <rich_text>
+	Void is a type, not a data type.
+	
+	Functions can have void return type, which just mean that they don't return a value.
+	
+	The parameter list of a function can also be void, which simply means that the function does not take any parameters or doesn't need any.
+	
+	Just for now, think of void as a placeholder for ‘nothing', although it is much more complex than that, but for now this will suffice.
+	
+</rich_text>
+        <rich_text scale="h5" weight="heavy">→ These above are the five data types within </rich_text>
+        <rich_text style="italic" scale="h5" weight="heavy">C</rich_text>
+        <rich_text scale="h5" weight="heavy">.</rich_text>
+        <rich_text>
+
+→ However there's more...
+
+</rich_text>
+        <rich_text scale="h5" weight="heavy">The following are provided by &lt;cs50.h&gt; library</rich_text>
+        <rich_text>;
+
+</rich_text>
+        <rich_text style="italic" scale="h4" weight="heavy">⇒ Boolean (bool) Data Type</rich_text>
+        <rich_text>
+	The bool data type is used with variables that will store a boolean value. More precisely, they're only capable of storing one of these two values;
+	- </rich_text>
+        <rich_text weight="heavy">True</rich_text>
+        <rich_text>
+	- </rich_text>
+        <rich_text weight="heavy">False</rich_text>
+        <rich_text>
+
+</rich_text>
+        <rich_text style="italic" scale="h4" weight="heavy">⇒ String (str) Data Type</rich_text>
+        <rich_text>
+	The string data type is used for a variable in which you might wanna store a series of characters, which programmers call them strings.
+	
+	Strings include words, sentences, paragraphs and the like.
+	
+----------------------------------------------------------------------------------------------------------
+
+Later in the course, we're going to encounter </rich_text>
+        <rich_text weight="heavy">structures</rich_text>
+        <rich_text> (structs) and </rich_text>
+        <rich_text weight="heavy">defined types</rich_text>
+        <rich_text> (typedefs) that afford great flexibility in creating data types you need for your program.
+
+Now let's discuss how to create, manipulate, and otherwise work with variables using these data types.
+
+</rich_text>
+        <rich_text style="italic" scale="h4" weight="heavy">⇒ Declaration of a Variable</rich_text>
+        <rich_text>
+
+	It's pretty simple;
+		- First thing to do is to specify what type of variable that you want, e.g
+		</rich_text>
+        <rich_text justification="left"></rich_text>
+        <rich_text>
+		- Second thing to do is to write down the name of the variables, e.g
+		</rich_text>
+        <rich_text justification="left"></rich_text>
+        <rich_text>
+
+Now how do we use the variable;
+
+</rich_text>
+        <rich_text style="italic" scale="h4" weight="heavy">⇒ Assignment of a Value</rich_text>
+        <rich_text>
+
+	After the variable is being created, there is no need to specify the type of that variable anymore, since now the computer already knows what type of data will be stored inside that specific variable.
+
+	All you need to do now is to store any value within it.
+		- First, right down the name of the variable
+		- Second, we're going to be using an operator, the </rich_text>
+        <rich_text style="italic">assignment operator</rich_text>
+        <rich_text> to assign the variable any 	value
+		- Third, write down the value that you wanna store inside the variable
+		- And lastly, fourth, end the statement with a semicolon
+	
+		</rich_text>
+        <rich_text justification="left"></rich_text>
+        <rich_text>
+
+</rich_text>
+        <rich_text style="italic" scale="h4" weight="heavy">⇒ Initialization of a Variable</rich_text>
+        <rich_text>
+	In order to initialize a variable, all you need to </rich_text>
+        <codebox char_offset="3654" justification="left" frame_width="500" frame_height="20" width_in_pixels="1" syntax_highlighting="c" highlight_brackets="1" show_line_numbers="0">int</codebox>
+        <codebox char_offset="3729" justification="left" frame_width="500" frame_height="20" width_in_pixels="1" syntax_highlighting="c" highlight_brackets="1" show_line_numbers="0">int height;</codebox>
+        <codebox char_offset="4340" justification="left" frame_width="500" frame_height="20" width_in_pixels="1" syntax_highlighting="c" highlight_brackets="1" show_line_numbers="0">height = 20;</codebox>
+      </node>
+    </node>
+  </node>
+</cherrytree>

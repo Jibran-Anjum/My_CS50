@@ -1,0 +1,12 @@
+#+TITLE: Prime Numbers
+
+* Background
+Prime numbers are defined as whole numbers greater than 1, whose only factors are 1 and itself. So 3 is prime because its only factors are 1 and 3, while 4 is composite and not prime, because it is the product of 2 × 2. In this lab you will write an algorithm to generate all prime numbers in a range specified by the user.
+
+* Procedure
+** Including the =stdio.h= library file
+** Beginning the main function
+** Initializing Variables
+*** of =int= type
+** Ask for input =range= from the user
+** Write the algorithm to single out prime numbers from the provided range

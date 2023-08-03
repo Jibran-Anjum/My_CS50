@@ -1,0 +1,76 @@
+#+TITLE: Creating Functions in C
+
+* Problem
+** Create a function that asks for the following values
+*** Bill before tax and tip
+*** Sale tax percent
+*** Tip percent
+
+* Implementation Details
+Your function should use the input parameters, =bill=, =tax=, and =tip=, to calculate the final amount. However, since these values are percentages, you’ll have to do some work to convert these to more appropriate formats to use for your calculation.
+
+The tax should be added to the bill amount before calculating the tip. Finally, you will return exactly half of the full amount, including the bill amount, the tax and the tip.
+
+* Procedure
+
+** Include the standard input/output library file =<stdio.h>=
+** Creating a function of type float =calc_bill=
+** Create the main function that will hold the variables =bill= =tax= =tip=
+#+begin_src c
+  int main()
+    {
+      float bill, tax, tip;
+    }
+#+end_src
+** The required function
+*** Declaration of the function
+#+begin_src c
+  #include <stdio.h>
+
+  float calc_bill(float, float, float); // declaration
+#+end_src
+
+*** calling of the function
+#+begin_src c
+  int main()
+  {
+    float bill_pay = calc_bill(bill, tax, tip);
+    }
+  // called the function and stored it inside a variable bill_pay
+#+end_src
+
+*** Definition of the function
+#+begin_src c
+    // Here we define the function
+    float calc_bill(float x, float y, float z)
+      {
+        float total_amount = 0;
+          // Ask for input for x
+        printf("Bill before tax and tip: ");
+        scanf("%f", &x);
+
+        // Ask for input for y
+        printf("Sale tax percent: ");
+        scanf("%f", &y);
+
+        // Ask for input for z
+        printf("Tip percent: ");
+        scanf("%f", &z);
+
+        total_amount = total_amount + x + (x / 100);
+        total_amount = total_amount + (x * y / 100);
+        total_amount = total_amount + (x * z / 100);
+        printf("%f\n", total_amount);
+        return total_amount / 2.0;
+      }
+#+end_src
+
+** Then simply call the function within the main function
+#+begin_src c
+  int main()
+    {
+      float bill, tax, tip;
+      float bill_pay = calc_bill(bill, tax, tip);
+      printf("%f\n", bill_pay);
+    }
+#+end_src

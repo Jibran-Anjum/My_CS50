@@ -1,0 +1,23 @@
+#+TITLE: Lab 1
+
+* Determine how long it takes for a population to reach a particular size.
+** For this example use llamas...
+
+** Requirements
+
+*** Variables
+**** a variable that takes the starting size of the population
+
+**** a second variable that takes the size of the population required
+
+**** Algorithm (born each year = n / 3, died each year = n / 4)
+***** a variable that stores the llamas born each year
+***** a variable that stores the llamas die each year
+***** total llamas is equal to starting size
+***** while loop
+****** Condition
+******* if the total llamas each year is less than the required population of llamas
+
+******* total llamas in a single year (*total llamas = total llamas + llamas born each year - llamas die each year*)
+
+******* total repeat the process of finding the total llamas until it meets the required population
