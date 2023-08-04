@@ -1,0 +1,1 @@
+A **side** **effect** is something **visual** that happens on the screen, while a **return** value is a value that you actually get by a return function, that you can use and reuse.

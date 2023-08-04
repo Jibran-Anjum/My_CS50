@@ -1,0 +1,3 @@
+_Conditionals_ are an essential building block of programming, where the program looks to see if a specific condition has been met. If a condition is met, the program does something.
+
+→ **Remember**: Programming is often a process of trial and error. If you get frustrated, take time to talk yourself through the problem at hand. What is the specific problem that you're working on right now? What is working? What is not working?

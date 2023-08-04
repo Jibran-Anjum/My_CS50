@@ -1,0 +1,164 @@
+{
+  "main": {
+    "id": "7b4176e624679b91",
+    "type": "split",
+    "children": [
+      {
+        "id": "47fca77e1d2fa78c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "171a9e6a61760a4e",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "33294cc3dc5c4b11",
+    "type": "split",
+    "children": [
+      {
+        "id": "55673b5e63ee68f7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "be72d860cb5da068",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "b302a11cb797c1e6",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "03b6ad295bfe6504",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "3c7ffcccf2e35ad1",
+    "type": "split",
+    "children": [
+      {
+        "id": "95be3c25029aa9f7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4250c9671eeb1d3c",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "6106e81c8cdce638",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "c384cb49308ba596",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "1ae544efe136ec2f",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "171a9e6a61760a4e",
+  "lastOpenFiles": [
+    "Algorithm.md",
+    "Abstraction.md",
+    "Scratch Programming Language.md",
+    "bigOnotation.png",
+    "bigOnotation.png.md",
+    "Course.md",
+    "If statements.md",
+    "Unicode (Representation of Fonts).md",
+    "Representation of Videos.md",
+    "Representation of Music.md",
+    "Representation of Images.md",
+    "Pseudocode.md",
+    "RGB (Red, Green, Blue).md",
+    "ASCII (Representation of Fonts).md",
+    "Byte.md",
+    "Unary.md",
+    "Untitled 1.md",
+    "Bit.md",
+    "Binary.md",
+    "Computational Thinking.md"
+  ]
+}

@@ -1,0 +1,1 @@
+Like _long_ for _int_, just like that _double_ is for _float_. It uses twice amount of bits, float uses 32 bits and double uses 64 bits to represent floating values.

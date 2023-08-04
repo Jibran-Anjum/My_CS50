@@ -1,0 +1,3 @@
+Well, in fact, it's typically an assembly of some amount of red, some amount of green, some amount of blue, but there are other representations. If you're a graphic designer, you might know them, but RGB is still pretty common. It simply means that how much Red, Green or Blue in a dot on your computer is displayed.
+
+→ Note: A Pixel is just a dot on a computer screen. It means that every image, gif, or photographs are represented by pixels. And Pixels are the dots represented by the combination of RGB (red, green and blue).
