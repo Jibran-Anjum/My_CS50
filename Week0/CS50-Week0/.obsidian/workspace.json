@@ -11,8 +11,12 @@
             "id": "171a9e6a61760a4e",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "ASCII (Representation of Fonts).md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "ASCII (Representation of Fonts).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "ASCII (Representation of Fonts).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "ASCII (Representation of Fonts).md"
+              }
             }
           }
         ]
@@ -140,25 +148,28 @@
   },
   "active": "171a9e6a61760a4e",
   "lastOpenFiles": [
-    "Algorithm.md",
-    "Abstraction.md",
-    "Scratch Programming Language.md",
-    "bigOnotation.png",
-    "bigOnotation.png.md",
+    "ASCII.png",
+    "Computational Thinking.md",
+    "cs50Week0Slide38.png",
     "Course.md",
+    "cs50Week0Slide172.png",
     "If statements.md",
-    "Unicode (Representation of Fonts).md",
-    "Representation of Videos.md",
-    "Representation of Music.md",
-    "Representation of Images.md",
     "Pseudocode.md",
+    "Representation of Images.md",
+    "Representation of Music.md",
+    "Representation of Videos.md",
     "RGB (Red, Green, Blue).md",
-    "ASCII (Representation of Fonts).md",
-    "Byte.md",
+    "Scratch Programming Language.md",
     "Unary.md",
-    "Untitled 1.md",
+    "Byte.md",
     "Bit.md",
     "Binary.md",
-    "Computational Thinking.md"
+    "bigOnotation.png",
+    "ASCII (Representation of Fonts).md",
+    "Algorithm.md",
+    "Abstraction.md",
+    "bigOnotation.png.md",
+    "Unicode (Representation of Fonts).md",
+    "Untitled 1.md"
   ]
 }

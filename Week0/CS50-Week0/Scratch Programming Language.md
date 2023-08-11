@@ -8,6 +8,6 @@ To begin, drag the “when green flag clicked” building block to the programmi
 
 This illustrates quite well what we were discussing earlier regarding programming:
 
-![file:///tmp/.OZ4581/1.png](file:///tmp/.OZ4581/1.png)
+![[cs50Week0Slide172.png]]
 
 Notice that the input `hello world` is passed to the function `say`, and the _side effect_ of that function running is the cat saying `hello world`.

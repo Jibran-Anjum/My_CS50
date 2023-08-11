@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "d5ada23b40d464c2",
+        "id": "461de3006e43580e",
         "type": "tabs",
         "children": [
           {
-            "id": "472843282427947a",
+            "id": "b890a4b666dc7b69",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Course.md",
+                "file": "Topics.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 264.5086555480957
   },
   "right": {
     "id": "451af6daaf6b0aaa",
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Course.md",
+                "file": "Topics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Course.md",
+                "file": "Topics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Course.md"
+                "file": "Topics.md"
               }
             }
           }
@@ -146,12 +146,29 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "472843282427947a",
+  "active": "b890a4b666dc7b69",
   "lastOpenFiles": [
+    "Cryptography.md",
+    "Topics.md",
+    "int with the Main Function.md",
+    "Exit Status.md",
+    "Two Official Ways of Defining Main Function.md",
+    "Using Command Line Arguments within your Program.md",
+    "Arrays.md",
+    "Strings/Turning Uppercase Characters to Lowercase.md",
+    "Strings/Turning Lowercase Characters To Uppercase.md",
+    "Strings/Strlen.md",
+    "Strings/Strings.md",
+    "Strings",
+    "Local Variables.md",
+    "Global Variable.md",
+    "Decompiling.md",
     "Using a Third-Party Library in C.md",
-    "Course.md",
-    "Command Line Arguments.md",
+    "Characters (chars).md",
     "Cipher Text.md",
-    "Arrays.md"
+    "Command Line Arguments.md",
+    "Steps of Compiling.md",
+    "Debugging.md",
+    "Built-in Libraries.md"
   ]
 }

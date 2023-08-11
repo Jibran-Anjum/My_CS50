@@ -1,0 +1,1 @@
+With this function of *C*, we can find out the length of a string variable. Like what are the amount of characters within that specific string.

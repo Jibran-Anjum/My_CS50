@@ -1,0 +1,1 @@
+Local variables are variables that are defined or created within a specific function. Meaning that any variable that is declared within the main function or a for loop or any other loop or user-defined function can only be accessed within their borders not outside of them.

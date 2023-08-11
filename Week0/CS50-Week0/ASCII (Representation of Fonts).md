@@ -4,7 +4,7 @@ Firstly in order to answer your question, ‘A’ is represented by the decimal 
 
 Now in order to explain it, there is a system that was set in place, called ASCII. ASCII is an acronym that stands for ‘American Standard Code for Information Interchange’.
 
-![file:///tmp/.OZ4581/1.png](file:///tmp/.OZ4581/1.png)
+![[ASCII.png]]
 
 This standard was setup to form uniformity in the representation of letters of English alphabets.
 

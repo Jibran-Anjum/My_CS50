@@ -56,3 +56,4 @@ int calculate_pennies(int cents)
   cents %= 5;
   return cents;
 }
+

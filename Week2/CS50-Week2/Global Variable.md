@@ -1,0 +1,1 @@
+These are the variables that can be accessed by any function and anywhere within  the source-code. It can be accessed within the main function or any other user defined functions within the source-code.
