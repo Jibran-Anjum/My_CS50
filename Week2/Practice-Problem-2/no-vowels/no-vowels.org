@@ -1,0 +1,81 @@
+#+TITLE: Vowels to "l33tsp39k"
+
+* Implementation
+
+** DONE Implement your program in a file called no-vowels.c in a directory called no-vowels.
+*** DONE Implementation
+
+** TODO Your program must accept a single command-line argument, which will be the word that you want to convert.
+
+** TODO If your program is executed without any command-line arguments or with more than one command-line argument, your program should print an error message of your choice (with printf) and return from main a value of 1 (which tends to signify an error) immediately.
+
+** DONE Your program must contain a *function* called /replace/ which takes a string input and returns a string output.
+*** TODO Implementaion
+
+** TODO This function will change the following vowels to numbers: /a/ becomes /6/, e becomes /3/, /i/ becomes /1/, /o/ becomes /0/ and /u/ does not change.
+
+** TODO The input parameter for the replace function will be argv[1] and the return value is the converted word.
+
+** TODO The main function will then print the converted word, followed by =\n=.
+
+** TODO You may want to try using the /switch statement/ in your *replace* function.
+
+*** With the Help of CHATGPT
+Certainly! Here's a simple C program that takes a word as a command-line argument and converts it to a "leet" version where vowels are replaced by digits:
+
+#+begin_src c
+#include <stdio.h>
+#include <string.h>
+
+// Function to convert a character to its leet equivalent
+char convert_to_leet(char c) {
+    switch (c) {
+        case 'a': case 'A':
+            return '4';
+        case 'e': case 'E':
+            return '3';
+        case 'i': case 'I':
+            return '1';
+        case 'o': case 'O':
+            return '0';
+        case 'u': case 'U':
+            return '5';
+        default:
+            return c;
+    }
+}
+
+int main(int argc, char *argv[]) {
+    if (argc != 2) {
+        printf("Usage: %s word\n", argv[0]);
+        return 1;
+    }
+    
+    char *word = argv[1];
+    int length = strlen(word);
+
+    printf("Original word: %s\n", word);
+
+    printf("Leet version: ");
+    for (int i = 0; i < length; i++) {
+        char leet_char = convert_to_leet(word[i]);
+        printf("%c", leet_char);
+    }
+    printf("\n");
+
+    return 0;
+}
+#+end_src
+
+
+**** In this program:
+
+1. The =convert_to_leet= function takes a character as input and converts it to its leet equivalent according to the specified mappings.
+
+2. In the `main` function, the program checks if exactly one command-line argument (the word to be converted) is provided. If not, it prints the correct usage and exits.
+
+3. The provided word is stored in the `word` variable, and its length is calculated using `strlen`.
+
+4. The program then goes through each character of the word and uses the `convert_to_leet` function to transform the character. The leet version of the word is printed character by character.
+
+When you run the program with a word as a command-line argument, it will display the leet version of the word where vowels are replaced by their respective digits. For example, running `./leet hello` will output `h3ll0`.

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ASCII (Representation of Fonts).md",
+                "file": "Course.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ASCII (Representation of Fonts).md",
+                "file": "Course.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ASCII (Representation of Fonts).md",
+                "file": "Course.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ASCII (Representation of Fonts).md"
+                "file": "Course.md"
               }
             }
           }
@@ -148,9 +148,13 @@
   },
   "active": "171a9e6a61760a4e",
   "lastOpenFiles": [
-    "ASCII.png",
-    "Computational Thinking.md",
     "cs50Week0Slide38.png",
+    "Byte.md",
+    "Computational Thinking.md",
+    "Bit.md",
+    "Binary.md",
+    "ASCII (Representation of Fonts).md",
+    "ASCII.png",
     "Course.md",
     "cs50Week0Slide172.png",
     "If statements.md",
@@ -161,11 +165,7 @@
     "RGB (Red, Green, Blue).md",
     "Scratch Programming Language.md",
     "Unary.md",
-    "Byte.md",
-    "Bit.md",
-    "Binary.md",
     "bigOnotation.png",
-    "ASCII (Representation of Fonts).md",
     "Algorithm.md",
     "Abstraction.md",
     "bigOnotation.png.md",

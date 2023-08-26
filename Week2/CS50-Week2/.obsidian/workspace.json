@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Topics.md",
+                "file": "Command Line Arguments.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 264.5086555480957
+    "width": 264.5086555480957,
+    "collapsed": true
   },
   "right": {
     "id": "451af6daaf6b0aaa",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Topics.md",
+                "file": "Command Line Arguments.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Topics.md",
+                "file": "Command Line Arguments.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Topics.md"
+                "file": "Command Line Arguments.md"
               }
             }
           }
@@ -148,8 +149,8 @@
   },
   "active": "b890a4b666dc7b69",
   "lastOpenFiles": [
-    "Cryptography.md",
     "Topics.md",
+    "Cryptography.md",
     "int with the Main Function.md",
     "Exit Status.md",
     "Two Official Ways of Defining Main Function.md",

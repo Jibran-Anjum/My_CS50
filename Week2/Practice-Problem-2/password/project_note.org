@@ -1,0 +1,16 @@
+#+TITLE: NOTE-STUFF
+
+- [X] /included the header files/
+- [X] /declared the *check* function/
+  
+- [X] /main function created/ [4/4]
+  + [X] /created a char type variable to store the password/
+  + [X] /wrote the statements to ask the user for password/
+  + [X] /created a variable *result* that will store the return value of the check function/
+    
+  + [X] /for-loop/
+    - [X] /iterate the characters within the variable hello through the iterator *i*./
+    - [X] /pass the iterated value into the user-defined function/
+
+- [ ] /defining the *check function*./ [/]
+  + [ ] 
