@@ -1,5 +1,0 @@
-#+TITLE: NOTES
-
-* Steps
-- [X] /Converting Characters to their corresponding decimal values in ASCII./
-- [ ] /Converting Decimal to Binary/
