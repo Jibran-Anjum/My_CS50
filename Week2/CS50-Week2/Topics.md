@@ -2,6 +2,8 @@ The Course is;
 
 # Arrays
 
+# Section 1
+
 ## Topics
 1. [[Arrays]]
 2. [[Cipher Text]]
@@ -23,3 +25,12 @@ The Course is;
 18. [[Exit Status]]
 19. [[int with the Main Function]]
 20. [[Cryptography]]
+
+# Section 2
+
+## Topics
+1. [[2.1 Compilation]]
+2. [[2.2 Arrays]]
+3. [[2.3 Strings]]
+4. [[2.4 Command Line Arguments]]
+5. [[2.5 Design]]
